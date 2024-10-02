@@ -1,1 +1,17 @@
 https://www.youtube.com/watch?v=Rv6UFGNmNZg&list=PLZoTAELRMXVPS-dOaVbAux22vzqdgoGhG&index=4
+
+# > Folder type Symbol
+* > file type symbol
+
+
+#src
+    #components
+        *data_ingestion
+        *data_transformation
+        *model_trainer
+    #pipeline
+        *train_pipeline
+        *predict_pipeline
+    *logger
+    *exception
+    *utils
