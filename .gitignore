@@ -163,3 +163,4 @@ cython_debug/
 
 # ignore catboost info
 src/notebook/catboost_info/
+catboost_info/
