@@ -1,5 +1,10 @@
 https://www.youtube.com/watch?v=Rv6UFGNmNZg&list=PLZoTAELRMXVPS-dOaVbAux22vzqdgoGhG&index=4
+https://www.kdnuggets.com/10-github-repositories-to-master-mlops
+https://github.com/visenger/awesome-mlops
+https://github.com/PatrickCmd/mlops-project
 
+
+# explorer.compactFolders (disable it)
 # > Folder type Symbol
 * > file type symbol
 

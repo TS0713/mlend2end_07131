@@ -1,5 +1,5 @@
 import sys
-from logger import logging
+from src.logger import logging
 
 def error_message_details(error: str, error_detail:sys):
     _,_,exc_tb = error_detail.exc_info()
@@ -21,11 +21,15 @@ class CustomException(Exception):
 
 
 
+
+'''
 if __name__=="__main__":
     try:
         a = 'a'+10
     except Exception as e:
         logging.info(error_message_details(e,sys))
         raise CustomException(e,sys)
+'''
+
 
 
