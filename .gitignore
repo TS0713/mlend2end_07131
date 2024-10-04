@@ -162,5 +162,6 @@ cython_debug/
 #.idea/
 
 # ignore catboost info
-src/notebook/catboost_info/
-catboost_info/
+./src/notebook/catboost_info/*
+./catboost_info/*
+src/notebook/catboost_info/*
