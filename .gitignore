@@ -165,3 +165,10 @@ cython_debug/
 ./src/notebook/catboost_info/*
 ./catboost_info/*
 src/notebook/catboost_info/*
+/src/notebook/catboost_info/*
+
+# ignore pycache
+src/__pycache__/*
+src/__pycache__
+/src/__pycache__/*
+./src/__pycache__/*
