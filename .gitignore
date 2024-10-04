@@ -162,7 +162,7 @@ cython_debug/
 #.idea/
 
 # ignore catboost info
-catboost_info/
+mlend2end_07131/src/notebook/catboost_info/
 
 # ignore pycache
-__pycache__/
+mlend2end_07131/src/__pycache__/
