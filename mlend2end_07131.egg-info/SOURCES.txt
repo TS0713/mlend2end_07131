@@ -1,9 +1,0 @@
-LICENSE
-README.md
-setup.py
-mlend2end_07131.egg-info/PKG-INFO
-mlend2end_07131.egg-info/SOURCES.txt
-mlend2end_07131.egg-info/dependency_links.txt
-mlend2end_07131.egg-info/requires.txt
-mlend2end_07131.egg-info/top_level.txt
-src/__init__.py
