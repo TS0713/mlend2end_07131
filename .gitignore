@@ -167,3 +167,7 @@ src/notebook/catboost_info
 # ignore pycache
 src/__pycache__
 
+# ignore artifacts 
+src/artifacts
+
+
