@@ -5,16 +5,8 @@ from src.exception import CustomException
 from src.logger import logging
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from dataclasses import dataclass
+from src.components.config import DataIngestionConfig
 
-
-@dataclass
-class DataIngestionConfig:
-    train_data_path: str = os.path.join(src_dir,"artifacts","train_data.csv")
-    test_data_path: str = os.path.join(src_dir,"artifacts","test_data.csv")
-    raw_data_path: str = os.path.join(src_dir,"artifacts","raw_data.csv")
-    def __init__(self):
-        os.makedirs(os.path.join(src_dir,"artifacts"),exist_ok=True)
 
 class DataIngestion:
     
@@ -48,13 +40,15 @@ class DataIngestion:
             )
         except Exception as e:
             logging.info(str(e))
-            CustomException(str(e),sys)
+            raise CustomException(str(e),sys)
             
 
     
-
+'''
 if __name__=="__main__":
     data_ingestion_obj = DataIngestion()
     data_ingestion_obj.initiate_data_ingestion()
+
+'''
 
 
