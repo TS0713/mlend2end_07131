@@ -106,7 +106,7 @@ class DataTransformation:
 
 
 
-'''
+
 if __name__ == "__main__":
     from src.components.config import DataIngestionConfig, DataTransformationConfig, DataFields
     from src.components.data_ingestion import DataIngestion
@@ -119,7 +119,7 @@ if __name__ == "__main__":
     data_transformation_obj.initiate_data_transformation()
 
 
-'''
+
 
 
     

@@ -28,11 +28,16 @@ class DataIngestion:
             logging.info("Train Test Split Initiated")
 
             train_set, test_set = train_test_split(df,test_size=0.2,random_state=42)
+            
+            logging.info("Sucessfull - Splitting Raw Data")
 
             train_set.to_csv(self.ingestion_config.train_data_path,index=False,header=True)
-            test_set.to_csv(self.ingestion_config.test_data_path,index=False,header=True)
+            logging.info(f"Sucessfull - Saving Train Data file: {os.path.basename(self.ingestion_config.train_data_path)} in the location: {os.path.dirname(self.ingestion_config.train_data_path)}")
 
-            logging.info("Ingestion of the Data is Completed")
+            test_set.to_csv(self.ingestion_config.test_data_path,index=False,header=True)
+            logging.info(f"Sucessfull - Saving Test Data file: {os.path.basename(self.ingestion_config.test_data_path)} in the location: {os.path.dirname(self.ingestion_config.test_data_path)}")
+
+            logging.info("Data Ingestion - Successfull")
             return (
                 self.ingestion_config.raw_data_path,
                 self.ingestion_config.train_data_path,
