@@ -5,10 +5,10 @@ import sys
 
 import numpy as np
 import pandas as pd
-from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
-from sklearn.preprocessing import OneHotEncoder, StandardScaler
+from sklearn.compose import ColumnTransformer
 
 from src.exception import CustomException
 from src.logger import logging
@@ -104,11 +104,8 @@ class DataTransformation:
             raise CustomException(e,sys)
 
 
-
-
-
+'''
 if __name__ == "__main__":
-    from src.components.config import DataIngestionConfig, DataTransformationConfig, DataFields
     from src.components.data_ingestion import DataIngestion
     #from src.components.data_transformation import DataTransformation
 
@@ -117,6 +114,9 @@ if __name__ == "__main__":
 
     data_transformation_obj = DataTransformation()
     data_transformation_obj.initiate_data_transformation()
+
+'''
+
 
 
 
