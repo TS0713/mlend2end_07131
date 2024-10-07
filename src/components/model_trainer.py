@@ -32,7 +32,7 @@ class ModelTrainer:
                                              )
             
 
-            model_report = evaluate_model(x_train=x_train,y_train=y_train,x_test=x_test,y_test=y_test,models=ModelList.models)
+            model_report = evaluate_model(x_train=x_train,y_train=y_train,x_test=x_test,y_test=y_test,models=ModelList.models,params=ModelList.params)
 
             # Best Model Score
             best_model_score = sorted(model_report.items(), key = lambda x: x[1], reverse=True)[0][1]
@@ -61,6 +61,7 @@ class ModelTrainer:
             raise CustomException(str(e),sys)
         
 
+'''
 if __name__ == "__main__":
 
     from src.components.data_ingestion import DataIngestion
@@ -76,5 +77,5 @@ if __name__ == "__main__":
     model_trainer_obj = ModelTrainer()
     print (model_trainer_obj.initiate_model_trainer(train_array=train_array,test_array=test_array))
 
-
+'''
 
