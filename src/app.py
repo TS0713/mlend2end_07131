@@ -21,9 +21,7 @@ def train_model():
     
 @app.route("/prediction",methods=["GET","POST"])
 def predict_data():
-
     try:
-
         if request.method=="GET":
             return render_template("home.html")
         else:
